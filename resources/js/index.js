@@ -1,4 +1,4 @@
 
     document.getElementById('continuar-btn').onclick = function() {
-        window.location.href = '../../principal/principal.html';
+        window.location.href = 'principal/principal.html';
     };
