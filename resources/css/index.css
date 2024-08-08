@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/fondo1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:flex-end;
+
+}
+
+/* agregar fondo negro */
+.fondo_negro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+    z-index: 1;
+}
+
+.contenido_principal{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    /* background-color: black; */
+}
+.txt{
+    color: gray;
+}
+
+.carta{
+    width: 100%;
+    padding: 35px;
+    color: white;
+}
+
+.carta_titulo h1{
+    font-size: 6.5vh;
+}
+
+.carta_cuerpo p{
+    font-size: 2.5vh;
+}
+
+/* para botones */
+.carta_pie {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 10px;
+    /* background-color: #f8f9fa; Light background for contrast */
+    border-radius: 8px;
+}
+
+/* Common Button Styles */
+.carta_pie input[type="button"] {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    margin-left: 15px;
+}
+
+/* Continue Button Specific Styles */
+.continuar-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.continuar-btn:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Manual Button Specific Styles */
+.manual-btn {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+.manual-btn:hover {
+    background-color: #0069d9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
