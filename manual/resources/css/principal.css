@@ -1,44 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
-}
-/* mnvegacion */
-.navegacion {
-  text-align: center;
-  background-color: #f9f9f9; /* Color de fondo opcional */
-  padding: 20px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
 }
 
-.navegacion ul {
-  list-style-type: none; /* Quitar puntos de la lista */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 40px; /* Espaciado entre elementos */
-}
-
-.navegacion a {
-  font-family: 'Poppins', sans-serif; /* Aplicar la fuente Poppins */
-  font-weight: 300; /* Usar la variante Light */
-  font-size: 1.2em; /* Tamaño de la fuente */
-  color: #333; /* Color del texto */
-  text-transform: uppercase; /* Convertir el texto a mayúsculas */
-  letter-spacing: 2px; /* Espaciado entre letras */
-  cursor: pointer; /* Cambiar el cursor al pasar sobre los elementos */
-  transition: color 0.3s ease; /* Transición suave para el cambio de color */
-}
-
-
-.navegacion a:hover {
-  color: #4CAF50; /* Cambiar el color del texto al pasar el mouse */
-}
-
-.navegacion a{
-  text-decoration: none;
-}
 .contenedor {
   position: relative;
   width: 100%;
@@ -259,49 +223,6 @@ ul {
   font-size: 1.8vh;
   text-align: center;
 }
-/* manual de uso */
-.contenido_manual_uso {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  display: flex;
-  justify-content: flex-end;
-  background-image: url('../img/fondomanual.png');
-  background-size: cover;
-  align-items: center;
-  /* background-position: center ; */
-}
-
-.manual_contenido{
-  width: 50%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 2;
-  /* background-color: #000; */
-}
-.manual_contenido h2,p,a{
-  text-align: center;
-}
-.manual_contenido h2{
-  font-size: 4.5vh;
-  
-}
-.manual_contenido p,a{
-  font-size: 2.5vh;
-  text-wrap: wrap;
-  
-}
-
-.boton-manual {
-  text-decoration: none;
-  padding: 5px;
-  height: 50px ;
-  background-color: #ff0000;
-  color: white;
-}
-
 
 /* Sección de preguntas */
 
@@ -355,6 +276,8 @@ details[open] p {
   padding: 10px;
   transition: max-height 0.5s ease-in;
 }
+
+
 
 /* pie de pagina */
 .pie_pagina {

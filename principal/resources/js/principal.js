@@ -18,3 +18,19 @@ document.querySelectorAll('.faq-item').forEach((item) => {
     });
   });
   
+  document.addEventListener('DOMContentLoaded', function () {
+    var enlaces = document.querySelectorAll('.navegacion a');
+
+    for (var i = 0; i < enlaces.length; i++) {
+        enlaces[i].addEventListener('click', function (e) {
+            // Comprobar si el enlace apunta a una sección en la misma página
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                var destino = this.getAttribute('href');
+                document.querySelector(destino).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            } 
+        });
+    }
+});
