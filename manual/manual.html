@@ -1,11 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/css/manual.css" />
+    <link rel="stylesheet" href="resources/css/poppis.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>La perla</title>
-</head>
-<body>
-    <h2>manual</h2>
-</body>
+  </head>
+  <body>
+    <div class="encabezado">
+      <div class="fondo_negro"></div>
+      <div class="navegacion">
+        <nav>
+          <ul class="poppins-bold">
+            <li><a href="../principal/principal.html">descarga</a></li>
+            <li><a href="#installation">Instalación</a></li>
+            <li><a href="#usage" onclick="toggleDiv('guia_uso_manual_guia')">Guía de Uso</a></li>
+            <li><a href="#usage" onclick="toggleDiv('guia_uso_manual_video')">Guía de Uso(video)</a></li>
+            <!-- <li><a href="#faq">Preguntas Frecuentes</a></li> -->
+            <!-- <li><a href="#support">Soporte</a></li> -->
+          </ul>
+        </nav>
+      </div>
+      <div class="encabezado_bienvenida">
+        <h1 class="poppins-medium">
+          Bienvenido al manual de usuario del <br />sistema de inventario "La
+          Perla".
+        </h1>
+      </div>
+    </div>
+    <div class="contenedor" id="usage">
+      <div class="caja_bienvenida_web" >
+        <h2 class="poppins-light">
+          Este documento te guiará a través de las funcionalidades clave y el
+          uso general del sistema. <br />
+          ¿Por dónde quieres empezar?
+        </h2>
+        <div class="opciones_manual">
+          <input
+            type="button"
+            value="Instalación"
+            class="botones_manual"
+            onclick="toggleDiv('instalacion_manual_guia')"
+          />
+          <input
+            type="button"
+            value="Guía de Uso"
+            class="botones_manual"
+            onclick="toggleDiv('guia_uso_manual_guia')"
+          />
+          <input
+          type="button"
+          value="Guía de Uso(video)"
+          class="botones_manual"
+          onclick="toggleDiv('guia_uso_manual_video')"
+        />
+        </div>
+       
+    </div>
+      </div>
+
+      <div id="instalacion_manual_guia" class="manual_guia oculto" >
+        <div class="manual_titulo poppins-bold">
+          <h2>Instalacion Manual</h2>
+        </div>
+        <div class="seccion_manual">
+          <div class="seccion_texto">
+            <h3>paso3</h3>
+            <p>pasos</p>
+          </div>
+          <div class="seccion_imagen">
+            <img src="resources/img/imagenManual.jpg" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/imagenManual.jpg" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>paso3</h3>
+            <p>pasos</p>
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_texto">
+            <h3>paso3</h3>
+            <p>pasos</p>
+          </div>
+          <div class="seccion_imagen">
+            <img src="resources/img/imagenManual.jpg" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/imagenManual.jpg" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>paso3</h3>
+            <p>pasos</p>
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_texto">
+            <h3>paso3</h3>
+            <p>pasos</p>
+          </div>
+          <div class="seccion_imagen">
+            <img src="resources/img/imagenManual.jpg" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/imagenManual.jpg" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>paso3</h3>
+            <p>pasos</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- manual de guia de uso  -->
+      <div id="guia_uso_manual_guia" class="manual_guia oculto">
+        <div class="manual_titulo poppins-bold">
+          <h2>Guia Uso Manual</h2>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso1.png" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>inicio sesion</h3>
+            <p>
+              para iniciar sesion debes ingresar <br />"admi" como usuario y
+              clave "12345"
+            </p>
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_texto">
+            <h3>configurar el usuario</h3>
+            <p>
+              una vez ingresado ala pantalla principal toque el icon "usuario"
+              que se encuentra en la parte esquina superior izquierda
+            </p>
+          </div>
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso2.png" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso3.png" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>configurar sus credenciales</h3>
+            <p>
+              configure tus datos para tener mejor privacidad del software,
+              <br />
+              asegurate de cambiar la contraseña por una mas segura <br />
+              cambie el correo electronico que mas usa (esto ayudara para hacer
+              el proceso de cambio de contraseña si la llegas a olvidar)
+            </p>
+          </div>
+        </div>
+
+        <div class="seccion_manual" id="proveedor">
+          <div class="seccion_texto">
+            <h3>Agregar Proveedor</h3>
+            <p>
+              para agregar Proveedor, ve al apartado en el menu de navegacion y
+              seleccione la que dice "Proveedor <br />
+              si estas en la pantalla principal seleccione la ventana donde dice
+              "Proveedor" <br />
+
+              <br />"esto es importante para que puedas registra un producto"
+            </p>
+          </div>
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso4.png" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso5.png" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>Nuevo Registro</h3>
+            <p>
+              para agregar un proveedor seleccione el icono verde con simbolo de
+              "+" <br />luego rellene los campos
+            </p>
+            <ul>
+              <li>
+                Codigo: tiene que ser numero (este es el identificacion del
+                proveeodr)
+              </li>
+              <li>Nombre: nombre del proveedor (no puede contener letras)</li>
+              <li>
+                Telefono: el contacto del proveedor (este espacio no permite
+                letras)
+              </li>
+            </ul>
+            <p>
+              despues de rellenar los campos, le das en aceptar y luego
+              cancelar(salir)
+            </p>
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_texto">
+            <h3>Modificar Proveedor</h3>
+            <p>
+              si deseas hacer una Modificacion a un registro del proveedor
+              seleccione el registro (este se pinta de color naranja) y luego
+              das click al icon de color naraja con simbolo de "lapiz" <br />
+              este proceso no se permite cambiar el codigo <br />luego le das en
+              modificar
+            </p>
+          </div>
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso7.png" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso8.png" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>Eliminar Proveedor</h3>
+            <p>
+              para eliminar proveedor, seleccione el proveedor y luego le das
+              clik al icon rojo de simbolo de "contendor"
+            </p>
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_texto">
+            <h3>Agregar Producto</h3>
+            <p>
+              para agregar producto, seleccione en el menu de navegacion
+              "productos" o si andas en la pantalla principal seleccione
+              "Inventario"
+              <br />
+            </p>
+          </div>
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso9.png" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso10.png" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>Nuevo Registro</h3>
+            <p>
+              para agregar un producto das click en el icon verde con simbolo
+              "+". primero asegurate de tener un
+              <a href="#proveedor">proveedor</a> en lista <br />
+              llene todos los campos requeridos, luego das en agregar y luego
+              cancelar (salir)
+            </p>
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_texto">
+            <h3>Modificar Producto</h3>
+            <p>
+              para modificar producto, seleccione el icon de color amarillo con
+              simbolo "lapiz" <br />
+              luego de modificar das en modificar
+
+              <br />
+            </p>
+          </div>
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso11.png" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso12.png" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>Eliminar producto</h3>
+            <p>
+              para eliminar el producto, primero tienes que seleccionarlo y
+              luego das click al icon rojo con simbolo de "reciclaje"
+            </p>
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_texto">
+            <h3>Cliente</h3>
+            <p>
+              para registrar un nuevo cliente, seleccione en el menu de
+              navegacion "clientes" o si andas en la pantala principal das click
+              en "clientes"
+
+              <br />
+            </p>
+          </div>
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso13.png" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso14.png" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>Nuevo Cliente</h3>
+            <p>
+              luego que estes dentro de la ventana,das click al icono verde con
+              simbolo de "+" , rellene los campos (el codigo es la
+              identificacion)
+            </p>
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_texto">
+            <h3>Modificar Cliente</h3>
+            <p>
+              para modificar un cliente, seleccione el icon de color naraja con
+              el simbolo de "lapiz" y luegos modifica los campos que deseas
+              modificar,no olvides en darle en modificar
+
+              <br />
+            </p>
+          </div>
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso15.png" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="seccion_manual">
+          <div class="seccion_imagen">
+            <img src="resources/img/guia uso/paso16.png" alt="" srcset="" />
+          </div>
+          <div class="seccion_texto">
+            <h3>Eliminar Cliente</h3>
+            <p>
+              seleccione un cliente y luego das click al icon rojo de simbolo
+              "reciclaje" y luego das en eliminar
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="guia_uso_manual_video" class="manual_guia oculto ">
+        <div class="espaciado_cajas"></div>
+        <div class="linea_video">
+          <div class="contendor_videos">
+            <h3>Proveedor</h3>
+            <div class="seccion_video">
+              <video width="600" controls>
+                <source src="resources/img/video guia/proveedor.mp4" type="video/mp4" />
+                Tu navegador no soporta la etiqueta de video.
+              </video>
+            </div>
+          </div>
+  
+          <div class="contendor_videos">
+            <h3>productos</h3>
+            <div class="seccion_video">
+              <video width="600" controls>
+                <source src="resources/img/video guia/productos.mp4" type="video/mp4" />
+                Tu navegador no soporta la etiqueta de video.
+              </video>
+            </div>
+          </div>
+  
+          <div class="contendor_videos">
+            <h3>clientes</h3>
+            <div class="seccion_video">
+              <video width="600" controls>
+                <source src="resources/img/video guia/cliente.mp4" type="video/mp4" />
+                Tu navegador no soporta la etiqueta de video.
+              </video>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+      </div>
+    </div>
+    <script src="resources/js/manual.js"></script>
+
+    <div class="pie_pagina">
+      <h3 class="poppins-light">
+        © Copyright 2024 | Todos los derechos reservados | La Perla
+      </h3>
+    </div>
+  </body>
 </html>
